@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Provo Chamber of Commerce Join Page</title>
+    <meta name="description" content="Join Page for Provo Utah's Chamber of Commerce ">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+</head>
+
+<body>
+
+    <header>
+        <a href='./index.html'><img src="./images/mountain-1849091_640.png" alt="Mountian Icon"></a>
+        <section class="headings">
+            <h1>The Provo Chamber of Commerce</h1>
+        </section>
+
+    </header>
+
+    <nav class="clearfix navigation">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="navMenu" class="hidden">
+            <li class="active"><a href="../join/join.html">Join</a></li>
+            <li><a href="../provo/provo.html">Provo</a></li>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../directory/directory.html">Directory</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class='mostly-main'>
+        <di>
+            <h2>Application Form to Join</h2>
+            <p>Thanks for considering joining the Provo Chamber of Commerce!</p>
+            <p>Fill out the application and we will be in contact with you as soon as possible!</p>
+            <p>Your volunteer service can affect generations!</p>
+        </di>
+
+        <h3><b>Contact Information</b></h3>
+        <form method="get" action="thanks.html" class="grid">
+            <fieldset>
+                <label>Full Name:<br>
+                    <input type="text" name="fullName" required pattern="[A-Za-z ]{5,}">
+                </label><br>
+                <label>Job Title:<br>
+                    <input type="text" name="jobTitle">
+                </label><br>
+                <label>Email:<br>
+                    <input type="email" name="email" required placeholder="youremail@email.com"></label><br>
+                <label>Phone:<br>
+                    <input type="tel" name="phone" placeholder="###-###-####">
+                </label><br>
+            </fieldset>
+            <h3>Business Information</h3>
+            <fieldset>
+                <label>Business Name<br>
+                    <input type="text" name="busName" required>
+                </label><br>
+                <label>Business Address<br>
+                    <input type="text" name="busAddress">
+                </label><br>
+                <label>Business Website<br>
+                    <input type="text" name="websiteURL">
+                </label><br>
+                <label>Business Description<br>
+                    <textarea id="busdes" name="busdes" rows="5" cols="35"></textarea>
+                </label><br>
+            </fieldset>
+            <h3>Membership</h3>
+            <fieldset>
+                <label>Membership Level<br>
+                    <input name="membership" list="memberOptions" required>
+                </label>
+                <datalist id='memberOptions'>
+                    <option value="Non-profit ($100)">
+                    <option value="Bronze ($200)">
+                    <option value="Silver ($400)">
+                    <option value="Gold ($1000)">
+                </datalist>
+            </fieldset>
+            <label><br><input type="submit" value="Send Application" class='join-now'></label>
+        </form>
+
+    </main>
+
+    <footer>
+        <a href='../contact/contact.html'>
+            <h4>Contact us!</h4>
+        </a>
+        <p>+1 (801) 562 6510</p>
+        <p>provo@chamberofcommerce.com</p>
+        <p>Last Updated: <span id='last-modification'></span></p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./javascript/scripts.js"></script>
+
+</body>
+
+</html>

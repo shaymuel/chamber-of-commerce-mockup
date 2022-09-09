@@ -1,0 +1,54 @@
+@media only screen and (min-width: 37.5em) {
+
+    header h1 {
+        font-size: 40px;
+
+    }
+
+    nav button {
+        margin: .3rem 2%;
+    }
+
+    footer {
+        font-size: 18px;
+        margin-top: 10px;
+
+    }
+
+    main h2 {
+        font-size: 35px;
+    }
+    .invite p{
+        font-size: 18px;
+    }
+
+    main p {
+        font-size: 18px;
+    }
+
+    h3, h4  {
+        font-size: 25px;
+        margin-top: 25px;
+        padding: 10px;
+    }
+
+    .gridone {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .gridtwo {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .box section {
+        display: block;
+        margin: 0 auto;
+    }
+
+}

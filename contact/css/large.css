@@ -1,0 +1,89 @@
+@media only screen and (min-width: 50em) {
+    nav button {
+        display: none;
+    }
+
+    nav ul li a{
+        border:none;
+        padding:.8em;
+        text-align: center;
+    }
+    nav ul.hidden {
+        display:flex;
+        justify-content: center;
+        justify-content:center;
+        padding: 5px;
+    }
+    nav ul{
+        margin:0;
+        padding:0;
+        font-size: 1.2em;
+    }
+    nav ul li{
+        padding:0px;
+        font-size:1rem;
+    
+    }
+
+    header h1 {
+        font-size: 55px;
+    }
+
+    .heroimg {
+        position: relative;
+        display:block;
+        
+}  
+
+    .invite {
+        position: absolute;
+        margin-top: -35%;
+        text-align: center;
+        margin-left: 15%;
+        color: #edf6f9;
+    }
+
+    footer {
+        font-size: 18px;
+        margin-top: 10px;
+
+    }
+
+    main h2 {
+        font-size: 50px;
+        color: #002529;
+    }
+    .invite p{
+        font-size: 18px;
+    }
+
+    main p {
+        font-size: 18px;
+    }
+
+    .contact h3, .location h3, h3, h4 {
+        font-size: 25px;
+        margin-top: 25px;
+        border: 3px solid #002529;
+        padding: 10px;
+    }
+    
+    .box {
+        grid-template-columns: 1fr 1fr 1fr;        
+      }
+
+    .box section {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .gridone {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .gridtwo {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
